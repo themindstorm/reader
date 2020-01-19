@@ -1,0 +1,33 @@
+<head>
+  <title>Readable</title>
+</head>
+
+<body>
+  <h1 id="title">Loading title ...</h1>
+  <article id="content">Loading content ...</article>
+
+  <script>
+    function main() {
+      let titleElement = document.querySelector('#title')
+      let contentElement = document.querySelector('#content')
+      
+      let articleUrl = document.location.href.split('#')[1]
+      console.log(articleUrl)
+
+      // replaceing / with $$
+      let escapedArticleUrl = articleUrl.replace(/\//g, "\$")
+      console.log(escapedArticleUrl)
+
+      fetch('/api/content/' + escapedArticleUrl)
+        .then((response) => {
+          return response.json()
+        })
+        .then((json) => {
+          console.log(json)
+          titleElement.innerText = json.title
+          contentElement.innerHTML = json.content
+        })
+    }
+    main()
+  </script>
+</body>
