@@ -1,0 +1,21 @@
+body {
+  background-color: #222;
+}
+
+
+.metadata{
+  color: #ddd;
+
+  #domain {
+    font-weight: bold;
+  }
+}
+
+article {
+  background-color: white;
+
+  // for github
+  .anchor {
+    display: none;
+  }
+}

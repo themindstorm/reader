@@ -1,33 +1,34 @@
 <head>
   <title>Readable</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/themindstorm/readability-ui@latest/output/all.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-  <h1 id="title">Loading title ...</h1>
-  <article id="content">Loading content ...</article>
+
+  <aside id="aside" class="wrapper">
+    <!-- article input -->
+
+    <h1>Readable</h1>
+    <form onsubmit="return submitArticleForm(event)">
+      <input id="article_input" type="text" placeholder="Enter an article link">
+      <input id="submit_article_button" type="submit">
+    </form>
+  </aside>
 
   <script>
-    function main() {
-      let titleElement = document.querySelector('#title')
-      let contentElement = document.querySelector('#content')
-      
-      let articleUrl = document.location.href.split('#')[1]
-      console.log(articleUrl)
 
-      // replaceing / with $$
-      let escapedArticleUrl = articleUrl.replace(/\//g, "\$")
-      console.log(escapedArticleUrl)
+    let $aside = document.querySelector('aside')
+    let $articleInput = document.querySelector('#article_input')
 
-      fetch('/api/content/' + escapedArticleUrl)
-        .then((response) => {
-          return response.json()
-        })
-        .then((json) => {
-          console.log(json)
-          titleElement.innerText = json.title
-          contentElement.innerHTML = json.content
-        })
+
+    function submitArticleForm(e) {
+      e.preventDefault()
+
+      let articleUrl = $articleInput.value
+
+      document.location = document.location + `/article/#${articleUrl}`
     }
-    main()
-  </script>
+</script>
 </body>

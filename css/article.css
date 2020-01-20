@@ -1,0 +1,20 @@
+body {
+  background-color: #222;
+}
+
+.metadata {
+  color: #ddd;
+}
+
+.metadata #domain {
+  font-weight: bold;
+}
+
+article {
+  background-color: white;
+}
+
+article .anchor {
+  display: none;
+}
+/*# sourceMappingURL=article.css.map */
