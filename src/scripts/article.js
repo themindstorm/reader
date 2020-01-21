@@ -36,6 +36,8 @@ async function fetchArticle(url) {
 }
 function setContent(articleJson) {
   $title.innerText = articleJson.title
+  document.title = articleJson.title
+
   $content.innerHTML = articleJson.content
 
   $domain.innerText = articleJson.domain
