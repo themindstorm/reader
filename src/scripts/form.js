@@ -6,6 +6,7 @@ $form.addEventListener('submit', function(e) {
   e.preventDefault()
   let articleUrl = $articleInput.value
   console.log(articleUrl)
-  window.location.href = `article.html#${articleUrl}`
+
   location.reload()
+  window.location.href = `article.html#${articleUrl}`
 })
