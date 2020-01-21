@@ -1,0 +1,14 @@
+extends _template.pug
+
+block styles
+  link(rel="stylesheet", href="./assets/scss/index.scss")
+
+block content
+  aside#aside.wrapper
+    h1 Readable
+    form
+      input#article_input(type='text', placeholder='Enter an article link')
+      input#submit_article_button(type='submit')
+
+block script
+  script(src="./scripts/form.js")

@@ -1,0 +1,19 @@
+extends _template.pug
+
+block styles
+  link(rel="stylesheet", href="./assets/scss/article.scss")
+
+block content
+  main
+    .metadata.wrapper
+      #domain Loading domain ...
+      h1#title Loading title ...
+      #byline
+        span#date_published Loading date ...
+        span#author Loading author ...
+    article#content.wrapper Loading content ...
+
+
+block script
+  script(src="./scripts/article.js")
+    

@@ -1,5 +1,17 @@
 {
+  "scripts": {
+    "build": "parcel build src/index.pug src/article.pug -d public"
+  },
   "dependencies": {
     "@postlight/mercury-parser": "^2.2.0"
-  }
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.25.0"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
 }

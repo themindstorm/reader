@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAI;CACvB;;AAGD,AAAA,SAAS,CAAA;EACP,KAAK,EAAE,IAAI;CAKZ;;AAND,AAGE,SAHO,CAGP,OAAO,CAAC;EACN,WAAW,EAAE,IAAI;CAClB;;AAGH,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,KAAK;CAMxB;;AAPD,AAIE,OAJK,CAIL,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;CACd",
-    "sources": [
-        "../scss/article.scss"
-    ],
-    "names": [],
-    "file": "article.css"
-}
