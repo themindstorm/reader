@@ -1,21 +1,39 @@
 body {
   background-color: #222;
+  height: 100%;
 }
 
+main {
 
-.metadata{
-  color: #ddd;
+  .metadata{
+    color: #ddd;
+  
+    #domain {
+      font-weight: bold;
+    }
 
-  #domain {
-    font-weight: bold;
+    #byline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-}
-
-article {
-  background-color: white;
-
-  // for github
-  .anchor, .header-anchor {
-    display: none;
+  
+  article {
+    background-color: white;
+    // height: 60vh; TODO
+    overflow: hidden;
+  
+    // for github
+    .anchor, .header-anchor {
+      display: none;
+    }
   }
+
+  aside {
+    p {
+      color: #eee;
+    }
+  }
+
 }

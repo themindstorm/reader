@@ -1,6 +1,7 @@
 extends _template.pug
 
 block styles
+  link(rel="stylesheet", href="./assets/scss/index.scss")
   link(rel="stylesheet", href="./assets/scss/article.scss")
 
 block content
@@ -9,10 +10,19 @@ block content
       #domain Loading domain ...
       h1#title Loading title ...
       #byline
-        span#date_published Loading date ...
         span#author Loading author ...
+        span#date_published Loading date ...
     article#content.wrapper Loading content ...
 
+    aside.wrapper
+      p 
+        | Please support the content creators at the 
+        a#original(href="" target="_blank") original website
+        | .
+      include _components/_form.pug
+
+      p
+        a(href="https://github.com/themindstorm/reader" target="_blank").button.black GitHub
 
 block script
   script(src="./scripts/article.js")

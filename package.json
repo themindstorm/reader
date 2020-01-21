@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "parcel build src/index.pug src/article.pug -d public"
+    "build": "parcel build src/index.pug src/article.pug -d public",
+    "uidev": "parcel src/index.pug src/article.pug"
   },
   "dependencies": {
     "@postlight/mercury-parser": "^2.2.0"

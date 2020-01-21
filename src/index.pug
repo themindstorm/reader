@@ -6,9 +6,7 @@ block styles
 block content
   aside#aside.wrapper
     h1 Readable
-    form
-      input#article_input(type='text', placeholder='Enter an article link')
-      input#submit_article_button(type='submit')
+    include _components/_form.pug
 
 block script
   script(src="./scripts/form.js")
