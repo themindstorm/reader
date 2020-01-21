@@ -5,5 +5,7 @@ let $articleInput = document.querySelector('#article_input')
 $form.addEventListener('submit', function(e) {
   e.preventDefault()
   let articleUrl = $articleInput.value
-  document.location = document.location.host + `/article.html#${articleUrl}`
+  console.log(articleUrl)
+  window.location.href = `article.html#${articleUrl}`
+  location.reload()
 })
