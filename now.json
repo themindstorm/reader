@@ -1,0 +1,6 @@
+{
+  "routes": [
+    {"src": "/", "dest": "/index.html"},
+    {"src": "(ftp|http|https).*", "dest": "/article.html"}
+  ]
+}

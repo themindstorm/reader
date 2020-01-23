@@ -7,10 +7,10 @@ $form.addEventListener('submit', function(e) {
   let articleUrl = $articleInput.value
   console.log(articleUrl)
 
-  // window.location.href = ""
-  window.location.href = `article.html#${articleUrl}`
-  if (location.href.includes('article')) {
-    location.reload(true)
-  } else {
-  }
+  window.location.href = articleUrl
+  // window.location.href = `article.html#${articleUrl}`
+  // if (location.href.includes('article')) {
+  //   location.reload(true)
+  // } else {
+  // }
 })
