@@ -6,8 +6,8 @@ let $datePublished = document.querySelector('#date_published')
 let $content = document.querySelector('#content')
 let $originalLink = document.querySelector('#original')
 
-// let articleUrl = document.location.pathname.split('/a/')[1].split(':')[1]
-let articleUrl = document.location.pathname
+let articleUrl = document.location.pathname.split('/a/')[1].split(':')[1]
+// let articleUrl = document.location.pathname
 
 // when pasting links, sometimes a / after https:// gets removed
 if (articleUrl[0] === "/") {
