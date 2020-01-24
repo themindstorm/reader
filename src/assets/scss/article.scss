@@ -1,5 +1,7 @@
+@import "./mixins.scss"; // for dark theme
+
 body {
-  background-color: #222;
+  background-color: #222 !important;
   height: 100%;
 }
 
@@ -7,9 +9,23 @@ main {
 
   .metadata{
     color: #ddd;
-  
-    #domain {
-      font-weight: bold;
+    
+    .first-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #domain {
+        font-weight: bold;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
+
+    #customization-toggles {
+      display: none;
     }
 
     #byline {
@@ -17,12 +33,19 @@ main {
       justify-content: space-between;
       align-items: center;
     }
+
+ 
   }
   
   article {
     background-color: white;
     // height: 60vh; TODO
     overflow: hidden;
+
+    // in dark mode, change color
+    @include dark-theme {
+      background-color: #19191a;
+    }
   
     // for github
     .anchor, .header-anchor {

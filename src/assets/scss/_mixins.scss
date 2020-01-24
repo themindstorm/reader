@@ -1,0 +1,8 @@
+// mizins cannot be shared on cdn, so redeclaring theme here
+
+// for dark theme
+@mixin dark-theme {
+  [data-theme='dark'] & {
+    @content
+  }
+}

@@ -6,11 +6,12 @@ html
     meta(name='theme-color', content='#111')
 
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/themindstorm/readability-ui@latest/output/all.css")
+    //- link(rel="stylesheet", href="./assets/scss/mixins.scss")
     block styles
 
     title #{title}
 
-  body
+  body(data-theme='light' data-font='sansserif')
     block content
 
     block script

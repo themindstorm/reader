@@ -23,6 +23,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June", "Jul
 $originalLink.href = articleUrl
 
 fetchArticle(articleUrl).then((response) => {
+  console.log(JSON.stringify(response))
   setContent(response)
 }) 
 

@@ -7,12 +7,25 @@ block styles
 block content
   main
     .metadata.wrapper
-      #domain Loading domain ...
+      .first-row
+        #domain Loading domain ...
+        img(src="https://img.icons8.com/material/24/dddddd/font-style-formatting.png")#customization-options
+
+      #customization-toggles
+        .button-group
+          button#theme_toggle.black Dark theme
+          button#font_toggle.red Serif font
+
       h1#title Loading title ...
+
       #byline
         span#author Loading author ...
         span#date_published Loading date ...
-    article#content.wrapper Loading content ...
+
+      
+    article#content.wrapper
+      h2 Your article is loading ...
+      p This should not take more than 3 seconds ...
 
     aside.wrapper
       p 
@@ -29,4 +42,7 @@ block script
 
   //- because form embedded at bottom
   script(src="./scripts/form.js")
+
+  //- theme customization
+  script(src="./scripts/custom.js")
     
